@@ -1,0 +1,14 @@
+&inputpp
+ prefix='WSe2',
+ outdir='.',
+ plot_num=0,
+ spin_component=1
+/
+&plot
+ iflag=3,
+ nx=77,
+ ny=77,
+ nz=77,
+ output_format=6,
+ fileout='rho.cube',
+/

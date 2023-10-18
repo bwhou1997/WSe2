@@ -1,0 +1,50 @@
+&control
+calculation     = 'scf'
+prefix          = 'WSe2',
+restart_mode    = 'from_scratch',
+tstress = .true.
+tprnfor = .true.
+wf_collect = .false.
+pseudo_dir      = './pp/'
+wfcdir = './'
+outdir          = './'
+ /
+&system
+ibrav = 0
+nat = 3
+ntyp =2
+ecutwfc         = 85,
+lspinorb = .true.
+noncolin = .true.
+
+ /
+&electrons
+   electron_maxstep = 100
+   conv_thr = 1.0d-10
+   mixing_mode = 'plain'
+   mixing_beta = 0.7
+   mixing_ndim = 8
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+ /
+
+ATOMIC_SPECIES
+W 183.84 W.upf
+Se 78.96 Se.upf
+
+
+CELL_PARAMETERS angstrom
+3.3215566955126600	0.0000000000000000	0.0000000000000000
+-1.6607783460963700	2.8765524779016600	0.0000000000000000
+0.0000000000000000	0.0000000000000000	19.9999920161880000
+
+
+ATOMIC_POSITIONS (crystal)
+W             0.3333333430        0.6666666870        0.1717155263
+Se            0.6666666870        0.3333333430        0.2557707349
+Se            0.6666666870        0.3333333430        0.0876582798
+
+
+K_POINTS automatic
+15 15 1 0 0 0

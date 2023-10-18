@@ -1,0 +1,219 @@
+TACC:  Starting up job 5841175 
+TACC:  Starting parallel tasks... 
+
+     Program PWSCF v.6.7MaX starts on  2Oct2023 at 13:23:58 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on  2240 processors
+
+     MPI processes distributed on    40 nodes
+     K-points division:     npool     =      16
+     R & G space division:  proc/nbgrp/npool/nimage =     140
+     Reading input from in
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./WSe2.save/
+     Atomic positions from file used, from input discarded
+ 
+     Message from routine readpp:
+     file ./WSe2.save/W.upf not found
+     Message from routine read_pp_mesh:
+     mesh size missing, using the one in header
+Error reading attribute index: expected integer, found *
+Error reading attribute index: expected integer, found *
+Error reading attribute index: expected integer, found *
+Error reading attribute index: expected integer, found *
+Error reading attribute index: expected integer, found *
+     Message from routine readpp:
+     file ./WSe2.save/Se.upf not found
+     Message from routine read_pp_mesh:
+     mesh size missing, using the one in header
+Error reading attribute index: expected integer, found *
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min           6       6      2                  952      952     198
+     Max           7       7      3                 1009     1009     243
+     Sum         925     925    337               136493   136493   29641
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       6.2738  a.u.
+     unit-cell volume          =    1288.2966 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =        40.00
+     number of Kohn-Sham states=           42
+     kinetic-energy cutoff     =      85.0000  Ry
+     charge density cutoff     =     340.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Non magnetic calculation with spin-orbit
+
+
+     celldm(1)=   6.273764  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   6.024218 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.165997 )  
+
+
+     PseudoPot. # 1 for W  read from file:
+     ./pp/W.upf
+     MD5 check sum: f4e19d9a7b822e7d95f272bb1fd0bd26
+     Pseudo is Norm-conserving, Zval = 28.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points, 14 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+               l(11) =   3
+               l(12) =   3
+               l(13) =   3
+               l(14) =   3
+
+     PseudoPot. # 2 for Se read from file:
+     ./pp/Se.upf
+     MD5 check sum: 692e225e46469d793d77ad3bf5999432
+     Pseudo is Norm-conserving, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  602 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+
+     atomic species   valence    mass     pseudopotential
+        W             28.00   183.84000     W ( 1.00)
+        Se             6.00    78.96000     Se( 1.00)
+
+      6 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           W   tau(   1) = (  -0.0000000   0.5773503   1.0344477  )
+         2           Se  tau(   2) = (   0.5000000   0.2886751   1.5351237  )
+         3           Se  tau(   3) = (   0.5000000   0.2886751   0.5337717  )
+
+     number of k points=   300
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   136493 G-vectors     FFT dimensions: (  40,  40, 225)
+
+     Estimated max dynamical RAM per process >      24.62 MB
+
+     Estimated total dynamical RAM >      53.85 GB
+     Message from routine sym_rho_init:
+     some processors have no G-vectors for symmetrization
+     Message from routine sym_rho_init:
+     some processors have no G-vectors for symmetrization
+     Message from routine sym_rho_init:
+     some processors have no G-vectors for symmetrization
+
+     The potential is recalculated from file :
+     ./WSe2.save/charge-density
+
+     Starting wfcs are random
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  2.50E-13,  avg # of iterations = 51.9
+
+     total cpu time spent up to now is       28.9 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     Writing output data file ./WSe2.save/
+ 
+     init_run     :      0.27s CPU      0.33s WALL (       1 calls)
+     electrons    :     27.54s CPU     28.09s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.03s WALL (       1 calls)
+     potinit      :      0.04s CPU      0.05s WALL (       1 calls)
+     hinit0       :      0.21s CPU      0.22s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     27.51s CPU     28.05s WALL (       1 calls)
+     v_of_rho     :      0.00s CPU      0.01s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.00s WALL (      19 calls)
+     cegterg      :     19.04s CPU     19.51s WALL (      56 calls)
+
+     Called by *egterg:
+     cdiaghg      :      3.38s CPU      3.40s WALL (     991 calls)
+     h_psi        :     14.70s CPU     15.14s WALL (    1047 calls)
+     g_psi        :      0.02s CPU      0.02s WALL (     972 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.46s CPU      0.49s WALL (    1047 calls)
+     vloc_psi     :     13.41s CPU     13.81s WALL (    1047 calls)
+     add_vuspsi   :      0.79s CPU      0.80s WALL (    1047 calls)
+
+     General routines
+     calbec       :      0.46s CPU      0.49s WALL (    1047 calls)
+     fft          :      0.19s CPU      0.20s WALL (      13 calls)
+     fftw         :     12.98s CPU     13.37s WALL (   88300 calls)
+     davcio       :      0.01s CPU      0.01s WALL (      38 calls)
+ 
+     Parallel routines
+     fft_scatt_xy :      0.39s CPU      0.40s WALL (   88313 calls)
+     fft_scatt_yz :     10.00s CPU     10.29s WALL (   88313 calls)
+ 
+     PWSCF        :     30.39s CPU     31.96s WALL
+
+ 
+   This run was terminated on:  13:24:30   2Oct2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+TACC:  Shutdown complete. Exiting. 

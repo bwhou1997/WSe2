@@ -1,0 +1,44 @@
+&control
+calculation     = 'bands'
+prefix          = 'MoS2',
+restart_mode    = 'from_scratch',
+tstress = .true.
+tprnfor = .true.
+wf_collect = .false.
+pseudo_dir      = './pp/'
+wfcdir = './'
+outdir          = './'
+ /
+&system
+ibrav = 0
+nat = 3
+ntyp =2
+ecutwfc         = 95,
+nbnd = 150
+lspinorb = .true.
+noncolin = .true.
+
+ /
+&electrons
+   electron_maxstep = 100
+   conv_thr = 1.0d-10
+   mixing_mode = 'plain'
+   mixing_beta = 0.7
+   mixing_ndim = 8
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+ /
+
+ATOMIC_SPECIES
+Mo 95.95 Mo_rel_rrkj_sc.UPF
+S 32.065 S_rel_tm.UPF
+
+CELL_PARAMETERS angstrom
+   3.144817974  -0.000000000   0.000000000
+  -1.572408987   2.723492255   0.000000000
+   0.000000000   0.000000000  20.000000000
+ATOMIC_POSITIONS angstrom
+Mo       0.000000000   0.000000000  10.000000000
+S       -0.000000000   1.815661504  11.571305147
+S       -0.000000000   1.815661504   8.428694853

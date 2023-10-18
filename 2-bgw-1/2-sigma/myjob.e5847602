@@ -1,0 +1,7 @@
+
+WARNING: |Eqp0 - Eo| > finite_difference_spacing. Linear extrapolation for eqp1
+may be inaccurate. You should test the validity of eqp1 by rerunning the
+calculation with the self energy evaluated at the eqp0 energies. For that,
+use the eqp_outer.dat file, created with eqp.py script and point WFN_outer to
+WFN_inner, if you were not already using WFN_outer.
+

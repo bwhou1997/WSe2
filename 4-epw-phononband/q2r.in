@@ -1,0 +1,6 @@
+&input
+  fildyn = 'WSe2.dyn'
+  zasr   = 'simple'
+  flfrc  = 'WSe2.fc'
+/
+

@@ -1,0 +1,5 @@
+crystal rho.cube
+load rho.cube core zpsp V 13 W 14 Se 16
+load rho.cube 
+integrable 2
+bader 

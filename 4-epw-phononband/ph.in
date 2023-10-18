@@ -1,0 +1,11 @@
+--
+&inputph
+  recover = .true.
+  tr2_ph  = 1.0d-15,
+  prefix  = 'WSe2',
+  ldisp   = .true.,
+  nq1=9, nq2=9, nq3=1
+  outdir  = './',
+  fildyn  = 'WSe2.dyn',
+  fildvscf= 'dvscf'
+/

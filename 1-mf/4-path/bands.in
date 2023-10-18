@@ -1,0 +1,7 @@
+&bands
+prefix = 'WSe2'
+outdir = './'
+filband = 'bands.dat'
+lsym = .false.
+/
+

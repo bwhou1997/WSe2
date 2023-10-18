@@ -1,0 +1,56 @@
+&control
+calculation     = 'vc-relax'
+prefix          = 'WSe2',
+restart_mode    = 'from_scratch',
+tstress = .true.
+tprnfor = .true.
+wf_collect = .false.
+pseudo_dir      = './pp/'
+wfcdir = './'
+outdir          = './'
+etot_conv_thr = 1d-8
+forc_conv_thr = 1d-5
+ /
+&system
+ibrav = 4
+A = 3.3199329376
+C = 20.0000000000
+nat = 3
+ntyp =2
+ecutwfc         = 85,
+lspinorb = .true.
+noncolin = .true.
+
+ /
+&electrons
+   electron_maxstep = 100
+   conv_thr = 1.0d-10
+   mixing_mode = 'plain'
+   mixing_beta = 0.7
+   mixing_ndim = 8
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+ /
+&ions
+/
+&cell
+cell_dofree = 'ibrav+2Dxy'
+/
+
+ATOMIC_SPECIES
+W 183.84 W.upf
+Se 78.96 Se.upf
+
+!CELL_PARAMETERS angstrom
+!        3.3199329376         0.0000000000         0.0000000000
+!       -1.6599664688         2.8751462628         0.0000000000
+!        0.0000000000         0.0000000000        20.0000000000
+
+ATOMIC_POSITIONS (crystal)
+W     0.333333343         0.666666687         0.171714842
+Se     0.666666687         0.333333343         0.254825383
+Se    0.666666687         0.333333343         0.088604316
+
+K_POINTS automatic
+15 15 1 0 0 0
