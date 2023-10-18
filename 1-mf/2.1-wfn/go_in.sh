@@ -17,7 +17,7 @@ date
 
 # Path setting
 BGWPATH="/home1/08237/bwhou/software/BGW-tolsmall/BerkeleyGW/bin/"
-QEPATH="/home1/08237/bwhou/software/qe-6.7/bin"
+QEPATH="/work2/08237/bwhou/frontera/software/exph_qe/q-e/bin"
 # Start mpi running for 1-mf
 
 pwd

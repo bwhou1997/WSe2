@@ -17,24 +17,24 @@ date
 
 # Path setting
 BGWPATH="/home1/08237/bwhou/software/BGW-tolsmall/BerkeleyGW/bin/"
-QEPATH="/home1/08237/bwhou/software/qe-6.7/bin"
+QEPATH="/work2/08237/bwhou/frontera/software/exph_qe/q-e/bin"
 # Start mpi running for 1-mf
 
 pwd
 date
 
 cd 1-scf
-#ibrun $QEPATH/pw.x -nk 16 -input scf.in > scf.out
+ibrun $QEPATH/pw.x -nk 16 -input scf.in > scf.out
 cd ../2.1-wfn
-ibrun $QEPATH/pw.x -nk 16 -input in > in.out
-ibrun $QEPATH/pw2bgw.x -nk 16 -input pp_in > pp_out
-
-cd ../2.2-wfnq
 #ibrun $QEPATH/pw.x -nk 16 -input in > in.out
 #ibrun $QEPATH/pw2bgw.x -nk 16 -input pp_in > pp_out
 
+cd ../2.2-wfnq
+ibrun $QEPATH/pw.x -nk 16 -input in > in.out
+ibrun $QEPATH/pw2bgw.x -nk 16 -input pp_in > pp_out
+
 cd ../4-path
-#ibrun $QEPATH/pw.x -nk 16 -input band.in > band.out
-#ibrun $QEPATH/pw2bgw.x -nk 16 -input pp_in > pp_out
-#ibrun $QEPATH/bands.x -nk 16 -input bands.in > bands.out
+ibrun $QEPATH/pw.x -nk 16 -input band.in > band.out
+ibrun $QEPATH/pw2bgw.x -nk 16 -input pp_in > pp_out
+ibrun $QEPATH/bands.x -nk 16 -input bands.in > bands.out
 
